@@ -1,0 +1,105 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    background-color: #12181B;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15vw;
+    background-image: linear-gradient(180deg,
+    rgb(190, 73, 27) 0%,
+    rgb(39, 135, 214) 50%,
+    rgb(8, 18, 24) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.controls {
+    margin-top: 16px;
+}
+
+.button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.set-alarm {
+    background-color: #498AFB;
+}
+
+.clear-alarm {
+    background-color: #FF3860;
+}
+
+.alarm-list {
+    background-color: rgb(223, 165, 165);
+    width: 700px;
+    height: 30vh;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.alarm-list > div {
+    background-color: rgb(83, 173, 164);
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.delete {
+    background-color: rgb(224, 77, 77);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.snooze {
+    background-color: rgb(41, 108, 207);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.pause {
+    background-color: rgb(23, 202, 38);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+}
